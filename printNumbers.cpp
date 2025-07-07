@@ -1,13 +1,14 @@
 #include<iostream>
 using namespace std;
 
-void printNumbers(int n,int m){
-    if (n>=1)
-    {  
-        cout<<m<<endl; 
+void printNumbers(int n){
+    if (n==0)
+    return;
+    
+       
         
-        printNumbers(n-1,m+1);
-    }
+        printNumbers(n-1);
+         cout<<n<<endl; 
     
     
 }
@@ -15,6 +16,5 @@ void printNumbers(int n,int m){
 
 int main(){
     int n=10;
-    int m=1;
-    printNumbers(n,m);
+    printNumbers(n);
 }
